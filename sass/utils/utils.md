@@ -1,0 +1,1 @@
+Dans ce dossier, on retrouvera toutes les variables, mixins et fonctions que nous utilisons dans nos fichiers Sass. On peut créer un fichier _variables.scss, un autre _mixins.scss, et un dernier _functions.scss pour exemple.
