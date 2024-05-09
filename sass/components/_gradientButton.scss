@@ -1,0 +1,16 @@
+.gradient_button{
+    font-size: 16px;
+    min-width: 186px;
+    color: #fff;
+    border-radius: 25px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    padding: 15px;
+    border: 0;
+
+    &:hover{
+        filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.35));
+        /* cours eclaircir*/
+    }
+}

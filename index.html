@@ -8,18 +8,18 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="/assets/images/logo/favicon.ico">
+        <link rel="stylesheet" href="/assets/css/main.css">
 
     <title>ohmyfood</title>
-    <meta name="title" content="ohmyfood" />
-    <link rel="stylesheet" href="css/sass/style.css" />
+    <meta name="title" content="ohmyfood">
   </head>
   <body>
 
 <!--prevoir le loader -au choix- aux couleurs du site-->
 
-    <header>
-      <h1>ohmyfood</h1>
+    <header class="header">
+      <img src="/assets/images/logo/ohmyfood.svg" alt="OhMyFood">
     </header>
 
     <main>
@@ -27,13 +27,12 @@
         <div>Paris, Belleville</p>
       </div>
 
-      <section>
-        <h2>Réservez le menu qui vous convient</h2>
+      <section> <!--hero section-->
+        <h1>Réservez le menu qui vous convient</h1>
         <p>
           Découvrez des restaurants d'exception, sélectionnés par nos soins.
         </p>
-
-        <!--prévoir bouton gradient et ses animations-->
+        <button class="gradient_button">Explorer nos restaurants</button>
       </section>
 
       <section>
@@ -60,6 +59,15 @@
       <section>
         <h2>Restaurants</h2>
 
+        <ul>
+          <li>
+            <a href="restaurants/la-palette-du-gout.html">Resto1</a>
+          </li>
+          <li>Resto2</li>
+          <li>Resto3</li>
+          <li>Resto4</li>
+        </ul>
+
         <!--prevoir 4 fois-->
         <!--prévoir cards-->
         <!--prévoir étiquette verte nouveau sur les 2 premiers restaurants-->
@@ -69,8 +77,8 @@
     </main>
 
     <footer>
-      <h2>ohmyfood</h2>
-      <ul class="footer__nav"> <!--a creer-->
+      <img class="logo" src="/assets/images/logo/ohmyfood.svg" alt="OhMyFood">
+      <ul class="footer__nav">
         <li>
           <a href="#">Proposer un restaurant</a>
         </li>

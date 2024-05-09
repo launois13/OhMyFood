@@ -1,0 +1,14 @@
+/* Base */
+@import "./base/normalize";
+@import "./base/typography";
+
+/* Components */
+@import "./components/gradientButton";
+
+/* Layouts */
+@import "./layouts/footer";
+@import "./layouts/header";
+
+body{
+    margin: 0;
+}
