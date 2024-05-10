@@ -1,0 +1,28 @@
+.grey_button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    background-color: #F6F6F6;
+    color: #000;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    
+
+    i {
+        margin-right: 10px;
+        font-size: 19px; // Taille de l'icône
+        color: #7E7E7E; // Couleur de l'icône par défaut
+    }
+
+    &:hover i {
+        color: #9356DC; // Couleur de l'icône au survol
+    }
+
+    &:focus {
+        outline: none; // Pour enlever le focus par défaut sur le bouton
+    }
+}

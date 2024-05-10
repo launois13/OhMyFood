@@ -1,6 +1,7 @@
 # OhMyFood
 Developper en mobile first, puis tablette et desktop
-Projet à réaliser en html et css + sass
+Page d'accueil + 4 pages restaurants
+Projet à réaliser en html et css + sass (avec des animations en css)
 images provenant du site unsplash :
 [Le délice des sens](https://unsplash.com/fr/photos/plat-brun-et-blanc-sur-plaque-en-ceramique-noire-qNBGVyOCY8Q)
 [La note enchantée](https://unsplash.com/fr/photos/boulettes-de-viande-sur-assiette-en-ceramique-blanche-u2Lp8tXIcjw)

@@ -1,0 +1,25 @@
+.card_resto {
+    border-radius: 15px; // Coins arrondis
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Ombre légère
+    overflow: hidden; // Pour masquer le débordement de l'image si nécessaire
+    margin-bottom: 20px; // Espacement entre les cards
+
+    img {
+        width: 100%; // Pour que l'image remplisse la largeur de la card
+        height: auto; // Pour que l'image conserve ses proportions
+    }
+
+    .card-content {
+        padding: 20px; // Espacement à l'intérieur de la card
+
+        h2 {
+            font-size: 18px; // Taille du titre
+            margin-bottom: 10px; // Espacement sous le titre
+        }
+
+        p {
+            font-size: 17px; // Taille du texte
+            color: #000000; // Couleur du texte
+        }
+    }
+}
