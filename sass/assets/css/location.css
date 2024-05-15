@@ -1,0 +1,9 @@
+@charset "UTF-8";
+.location {
+  display: flex; /* Utilise flexbox pour aligner l'icône et le texte horizontalement */
+  align-items: center; /* Centre verticalement les éléments */
+}
+
+.location i {
+  margin-right: 10px; /* Ajoute un espacement à droite de l'icône pour la séparer du texte */
+}/*# sourceMappingURL=location.css.map */

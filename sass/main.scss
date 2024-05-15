@@ -6,11 +6,15 @@
 @import "./components/gradientButton";
 @import "./components/greyButton";
 @import "./components/cardResto";
+@import "./components/cardContainer";
 
 /* Layouts */
 @import "./layouts/footer";
 @import "./layouts/header";
+@import "./layouts/location";
+
 
 body{
     margin: 0;
 }
+

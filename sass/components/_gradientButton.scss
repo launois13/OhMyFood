@@ -1,4 +1,4 @@
-.gradient_button{
+.gradient_button {
     font-size: 16px;
     min-width: 186px;
     color: #fff;
@@ -7,10 +7,21 @@
     filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.25));
     cursor: pointer;
     padding: 15px;
-    border: 0;
+    border: 1px solid #000; // Ajoute une bordure très fine en noir
+    transition: all 0.3s; // Ajoute une transition pour tous les effets
 
-    &:hover{
-        filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.35));
-        /* cours eclaircir*/
+    &:hover {
+        background: linear-gradient(lighten(#FF79DA, 10%), lighten(#9356DC, 10%)); // Eclaircit légèrement le fond du bouton au survol
+        filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.35)); // Rend l'ombre portée plus visible au survol
+        border-color: transparent; // Supprime la bordure noire au survol
+    }
+
+    &:focus {
+        outline: none; // Supprime l'effet de focus par défaut
+    }
+
+    &:active {
+        background: linear-gradient(#FF79DA, #9356DC); // Rétablit le fond du bouton à l'état normal au clic
+        filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.25)); // Rétablit l'ombre portée à l'état normal au clic
     }
 }

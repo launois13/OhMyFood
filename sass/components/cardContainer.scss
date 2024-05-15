@@ -1,0 +1,52 @@
+// Variables
+$breakpoint-desktop: 768px; // relire le brief pour la valeur souhaitée pour le breakpoint desktop et tablette
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; // Empilage vertical pour mobile
+
+  a {
+    text-decoration: none; // Supprime le soulignement des liens
+    color: inherit; // Hérite de la couleur de texte du parent
+  }
+}
+
+.card {
+  width: 100%; // Largeur 100% pour mobile
+  margin-bottom: 1rem; // Espacement entre les cards
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-content {
+    padding: 1rem;
+    background-color: #f5f5f5; // Couleur de fond pour la légende
+
+    h2 {
+      margin-top: 0; // Supprime la marge supérieure du titre
+    }
+
+    p {
+      margin-bottom: 0; // Supprime la marge inférieure du paragraphe
+    }
+  }
+}
+
+// Styles pour le format desktop
+@media (min-width: $breakpoint-desktop) {
+  .cards-container {
+    flex-direction: row; // Alignement horizontal pour desktop
+  }
+
+  .card {
+    width: calc(50% - 0.5rem); // Largeur 50% avec un petit espacement
+    margin-right: 1rem; // Espacement entre les cards
+
+    &:nth-child(2n) {
+      margin-right: 0; // Supprime la marge droite pour la dernière card de chaque ligne
+    }
+  }
+}
