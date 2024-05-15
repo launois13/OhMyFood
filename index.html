@@ -22,13 +22,15 @@
       <img src="/assets/images/logo/ohmyfood.svg" alt="OhMyFood">
     </header>
 
-    <main>
+    <main> <!--align center main section ?-->
       <div class="location"> <!-- Ajout de la classe "location" pour la div de localisation -->
-        <i class="fa fa-map-marker"></i> <!-- Icône de localisation -->
-        <p>Paris, Belleville</p> <!-- Texte de la localisation -->
-    </div>
+        <div class="location--marker">
+          <i class="fa fa-map-marker"></i> <!-- Icône de localisation -->
+          <p>Paris, Belleville</p> <!-- Texte de la localisation, pas d'Input de prévu pour la maquette client -->
+        </div>
+      </div>
 
-      <section> <!--hero section  align center-->
+      <section class="hero"> <!--hero section  align center-->
         <h1>Réservez le menu qui vous convient</h1> <!-- roboto bold 24-->
         <p>
           Découvrez des restaurants d'exception, sélectionnés par nos soins. <!--roboto light 18-->
@@ -36,35 +38,34 @@
         <button class="gradient_button">Explorer nos restaurants</button>
       </section>
 
-      <section>
+      <section class="operation">
         <h2>Fonctionnement</h2>
         <!--prevoir en ul li pour les 3 options ? est-ce interessant pour le responsive desktop ou revoir en flexbox ?-->
 
+        <ul class="list">
+          <li>
+            <button class="grey_button">
+              <div class="grey_button--number">1</div>
+              <i class="fas fa-mobile-screen-button"></i>
+              <span>Choisissez un restaurant</span>
+            </button>
+          </li>
+          <li>
+            <button class="grey_button">
+              <div class="grey_button--number">2</div>
+              <i class="fas fa-list-ul"></i>
+              <span>Composez votre menu</span>
+            </button>
+          </li>
+          <li>
+            <button class="grey_button">
+              <div class="grey_button--number">3</div>
+              <i class="fas fa-store"></i>
+              <span>Dégustez au restaurant</span>
+            </button>
+          </li>
+        </ul>
         <!--inclure la div numérotée à gauche du bouton-->
-        <div>
-          <button class="grey_button">
-            <i class="fas fa-mobile-screen-button"></i>
-            <span>Choisissez un restaurant</span>
-        </button>
-          
-          <div>1</div>
-        </div>
-
-        <div>
-          <button class="grey_button">
-            <i class="fas fa-list-ul"></i>
-            <span>Composez votre menu</span>
-        </button>
-          <div>2</div>
-        </div>
-
-        <div>
-          <button class="grey_button">
-            <i class="fas fa-store"></i>
-            <span>Dégustez au restaurant</span>
-        </button>
-          <div>3</div>
-        </div>
       </section>
 
       <section> <!--organisation  en flexbox anticipation format desktop -->
@@ -80,7 +81,7 @@
           </a>
           <a href="restaurants/la-note-enchantee.html">
             <figure class="card">
-              <img src="assets/images/restaurants/la-note-encahntee.jpg" alt="Description de l'image">
+              <img src="assets/images/restaurants/la-note-enchantee.jpg" alt="Description de l'image">
               <figcaption class="card-content">
                 <h2>La note enchantée</h2>
                 <p>Charonne</p>
@@ -105,10 +106,7 @@
               </figcaption>
             </figure>
           </a>
-        
-         
           <!-- ... -->
-        
         </div>
       </section>
     </main>
@@ -132,5 +130,4 @@
     </footer>
 
   </body>
-
 </html>

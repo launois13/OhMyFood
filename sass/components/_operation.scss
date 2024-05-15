@@ -1,0 +1,21 @@
+.operation {
+    text-align: center;
+    padding: 25px 16px;
+
+    h2 {
+        text-align: left;
+    }
+    
+    .list {
+        display: flex;
+        flex-direction: column;
+        max-width: 322px;
+        gap: 25px;
+        margin: 40px auto;
+        list-style: none;
+
+        button {
+            width: 100%;
+        }
+    }
+}

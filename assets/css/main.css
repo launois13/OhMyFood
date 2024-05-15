@@ -1,5 +1,14 @@
 @charset "UTF-8";
 /* Base */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://kit-free.fontawesome.com/releases/latest/css/free.min.css");
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -18,13 +27,13 @@ h1 {
   filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.25));
   cursor: pointer;
   padding: 15px;
-  border: 1px solid #000;
-  transition: all 0.3s;
+  border: none;
+  opacity: 1;
+  transition: all 0.5s;
 }
 .gradient_button:hover {
-  background: linear-gradient(#fface8, #ae80e5);
+  opacity: 0.8;
   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.35));
-  border-color: transparent;
 }
 .gradient_button:focus {
   outline: none;
@@ -35,6 +44,7 @@ h1 {
 }
 
 .grey_button {
+  position: relative;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -46,9 +56,10 @@ h1 {
   cursor: pointer;
   display: flex;
   align-items: center;
+  height: 72px;
 }
 .grey_button i {
-  margin-right: 10px;
+  margin: 0 10px 0 20px;
   font-size: 19px;
   color: #7E7E7E;
 }
@@ -57,6 +68,18 @@ h1 {
 }
 .grey_button:focus {
   outline: none;
+}
+.grey_button--number {
+  position: absolute;
+  left: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9356DC;
+  color: #fff;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
 }
 
 .card_resto {
@@ -91,23 +114,30 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  padding: 0 16px;
 }
 .cards-container a {
   text-decoration: none;
   color: inherit;
+  margin-bottom: 1rem;
 }
 
 .card {
   width: 100%;
-  margin-bottom: 1rem;
+  border-radius: 15rem;
 }
 .card img {
   width: 100%;
-  height: auto;
+  height: 174px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+  border-radius: 15px 15px 0 0;
 }
 .card .card-content {
   padding: 1rem;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
+  border-radius: 0 0 15px 15px;
 }
 .card .card-content h2 {
   margin-top: 0;
@@ -128,6 +158,29 @@ h1 {
     margin-right: 0;
   }
 }
+.hero {
+  text-align: center;
+}
+
+.operation {
+  text-align: center;
+  padding: 25px 16px;
+}
+.operation h2 {
+  text-align: left;
+}
+.operation .list {
+  display: flex;
+  flex-direction: column;
+  max-width: 322px;
+  gap: 25px;
+  margin: 40px auto;
+  list-style: none;
+}
+.operation .list button {
+  width: 100%;
+}
+
 /* Layouts */
 footer {
   background-color: #353535;
@@ -154,8 +207,16 @@ footer a {
 }
 
 .location {
+  background: #eaeaea;
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+.location--marker {
+  width: -moz-fit-content;
+  width: fit-content; /* Ajuste la largeur de l'élément à son contenu */
   display: flex; /* Utilise flexbox pour aligner l'icône et le texte horizontalement */
-  align-items: center; /* Centre verticalement les éléments */
+  margin: 0 auto; /* Centre le contenu horizontalement */
 }
 
 .location i {

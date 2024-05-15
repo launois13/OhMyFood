@@ -1,7 +1,12 @@
 @charset "UTF-8";
 .location {
   display: flex; /* Utilise flexbox pour aligner l'icône et le texte horizontalement */
-  align-items: center; /* Centre verticalement les éléments */
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto; /* Centre le contenu horizontalement */
+  background: grey;
+  height: 15px;
+  box-shadow: 1px 5px 5px red, inset 0px 5px 1px green;
 }
 
 .location i {

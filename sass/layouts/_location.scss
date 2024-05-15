@@ -1,0 +1,16 @@
+.location {
+    background: #eaeaea;
+    height: 45px;
+    display: flex;
+    align-items: center;
+
+    &--marker {
+        width: fit-content; /* Ajuste la largeur de l'élément à son contenu */
+        display: flex; /* Utilise flexbox pour aligner l'icône et le texte horizontalement */
+        margin: 0 auto; /* Centre le contenu horizontalement */
+    }
+}
+
+.location i {
+    margin-right: 10px; /* Ajoute un espacement à droite de l'icône pour la séparer du texte */
+}
