@@ -17,14 +17,20 @@
   <body>
 
 <!--prevoir le loader -au choix- aux couleurs du site-->
+    <div class="loader">
+      <i class="fa-solid fa-circle-notch"></i>
+    </div>
 
-    <header class="header">
+    <header class="header home_version">
+      <a class="back" href="/">
+        <i class="fa fa-arrow-left"></i>
+      </a>
       <img src="/assets/images/logo/ohmyfood.svg" alt="OhMyFood">
     </header>
 
-    <main> <!--align center main section ?-->
+    <main> 
       <div class="location"> <!-- Ajout de la classe "location" pour la div de localisation -->
-        <div class="location--marker">
+        <div class="location_marker">
           <i class="fa fa-map-marker"></i> <!-- Icône de localisation -->
           <p>Paris, Belleville</p> <!-- Texte de la localisation, pas d'Input de prévu pour la maquette client -->
         </div>
@@ -45,64 +51,90 @@
         <ul class="list">
           <li>
             <button class="grey_button">
-              <div class="grey_button--number">1</div>
-              <i class="fas fa-mobile-screen-button"></i>
+              <div class="grey_button_number">1</div> <!--inclure la div numérotée à gauche du bouton-->
+                <i class="fas fa-mobile-screen-button"></i>
               <span>Choisissez un restaurant</span>
             </button>
           </li>
           <li>
             <button class="grey_button">
-              <div class="grey_button--number">2</div>
+              <div class="grey_button_number">2</div>
               <i class="fas fa-list-ul"></i>
               <span>Composez votre menu</span>
             </button>
           </li>
           <li>
             <button class="grey_button">
-              <div class="grey_button--number">3</div>
+              <div class="grey_button_number">3</div>
               <i class="fas fa-store"></i>
               <span>Dégustez au restaurant</span>
             </button>
           </li>
         </ul>
-        <!--inclure la div numérotée à gauche du bouton-->
+        
       </section>
 
-      <section> <!--organisation  en flexbox anticipation format desktop -->
-        <div class="cards-container">
-          <a href="restaurants/la-palette-du-gout.html">
-            <figure class="card">
+      <section class="resto"> 
+        <h2>Restaurants</h2><!--creer la class--> <!--organisation  en flexbox anticipation format desktop -->
+        <div class="cards_container">
+        <a href="restaurants/la-palette-du-gout.html">
+
+            <figure class="card new_green">
               <img src="assets/images/restaurants/la-palette-du-gout.jpg" alt="Description de l'image">
-              <figcaption class="card-content">
-                <h2>La palette du goût</h2>
-                <p>Ménilmontant</p>
+              <figcaption class="card_content">
+                <div>
+                  <h2>La palette du goût</h2>
+                  <p>Ménilmontant</p>
+                </div>
+                <div class="heart">
+                  <i class="fa-solid fa-heart"></i> <!-- <i class="fa-regular fa-heart"></i> -->
+                </div>
               </figcaption>
             </figure>
           </a>
+
           <a href="restaurants/la-note-enchantee.html">
-            <figure class="card">
+            
+            <figure class="card new_green">
               <img src="assets/images/restaurants/la-note-enchantee.jpg" alt="Description de l'image">
-              <figcaption class="card-content">
-                <h2>La note enchantée</h2>
-                <p>Charonne</p>
+              <figcaption class="card_content">
+                <div>
+                  <h2>La note enchantée</h2>
+                  <p>Charonne</p>
+                </div>
+                <div class="heart">
+                  <i class="fa-solid fa-heart"></i> <!-- <i class="fa-regular fa-heart"></i> -->
+                </div>
               </figcaption>
             </figure>
           </a>
+
           <a href="restaurants/a-la-francaise.html">
             <figure class="card">
               <img src="assets/images/restaurants/a-la-francaise.jpg" alt="Description de l'image">
-              <figcaption class="card-content">
-                <h2>A la française</h2>
-                <p>Cité Rouge</p>
+              <figcaption class="card_content">
+                <div>
+                  <h2>A la française</h2>
+                  <p>Cité Rouge</p>
+                </div>
+                <div class="heart">
+                  <i class="fa-solid fa-heart"></i> <!-- <i class="fa-regular fa-heart"></i> -->
+                </div>
               </figcaption>
             </figure>
           </a>
+
           <a href="restaurants/le-delice-des-sens.html">
             <figure class="card">
               <img src="assets/images/restaurants/le-delice-des-sens.jpg" alt="Description de l'image">
-              <figcaption class="card-content">
-                <h2>Le délice des sens</h2>
-                <p>Folie-Méricourt</p>
+              <figcaption class="card_content">
+                <div>
+                  <h2>Le délice des sens</h2>
+                  <p>Folie-Méricourt</p>
+                </div>
+                <div class="heart">
+                  <i class="fa-solid fa-heart"></i> <!-- <i class="fa-regular fa-heart"></i> -->
+                </div>
               </figcaption>
             </figure>
           </a>
@@ -113,12 +145,12 @@
 
     <footer>
       <img class="logo" src="/assets/images/logo/ohmyfood.svg" alt="OhMyFood">
-      <ul class="footer__nav">
+      <ul>
         <li>
-          <a href="#">Proposer un restaurant</a>
+          <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
         </li>
         <li>
-          <a href="#">Devenir partenaire</a>
+          <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
         </li>
         <li>
           <a href="#">Mentions légales</a>

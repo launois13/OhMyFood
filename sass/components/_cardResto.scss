@@ -1,33 +1,33 @@
-.card_resto {
-    border-radius: 15px; // Coins arrondis
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Ombre légère
-    overflow: hidden; // Pour masquer le débordement de l'image si nécessaire
-    margin-bottom: 20px; // Espacement entre les cards
+// .card_resto {
+//     border-radius: 15px; // Coins arrondis
+//     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Ombre légère
+//     overflow: hidden; // Pour masquer le débordement de l'image si nécessaire
+//     margin-bottom: 20px; // Espacement entre les cards
 
-    img {
-        width: 100%; // Pour que l'image remplisse la largeur de la card
-        height: auto; // Pour que l'image conserve ses proportions
-    }
+//     img {
+//         width: 100%; // Pour que l'image remplisse la largeur de la card
+//         height: auto; // Pour que l'image conserve ses proportions
+//     }
 
-    .card-content {
-        padding: 10px; // Espacement à l'intérieur de la card (ancien 20px)
+//     .card-content {
+//         padding: 10px; // Espacement à l'intérieur de la card (ancien 20px)
 
-        h2 {
-            font-size: 18px; // Taille du titre
-            margin-top: 5px;
-            margin-bottom: 5px; // Espacement sous le titre (ancien 10px)
-            text-decoration: none;  //rajout
-        }
+//         h2 {
+//             font-size: 18px; // Taille du titre
+//             margin-top: 5px;
+//             margin-bottom: 5px; // Espacement sous le titre (ancien 10px)
+//             text-decoration: none;  //rajout
+//         }
 
-        p {
-            font-size: 17px; // Taille du texte
-            color: #000000; // Couleur du texte
-            text-decoration: none; // Retire le soulignement des textes (rajout, non actif ?)
-        }
-        a{
+//         p {
+//             font-size: 17px; // Taille du texte
+//             color: #000000; // Couleur du texte
+//             text-decoration: none; // Retire le soulignement des textes (rajout, non actif ?)
+//         }
+//         a{
             
-            text-decoration: none;
+//             text-decoration: none;
             
-        }
-    }
-}
+//         }
+//     }
+// }

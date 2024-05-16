@@ -1,4 +1,30 @@
 .header{
     text-align: center;
     padding: 20px 0;
+    z-index: 4;
+    position: relative;
+    
+    .back {
+        text-decoration: none;
+        color: #353535;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-left: 24px;
+        padding-bottom: 23px;
+        padding-top: 24px;
+        // A centrer
+        
+        i{
+            font-size: 17px;
+        }
+    }
+    
+    &.home_version {
+        box-shadow: 0 4px 4px #d4d4d4;
+
+        .back {
+            display: none;
+        }
+    }
 }

@@ -6,10 +6,15 @@ footer {
     .logo{
         width: 100px;
         filter: invert(100%) sepia(47%) saturate(0%) hue-rotate(55deg) brightness(111%) contrast(101%);
+        margin-bottom: 16px;
     }
 
     ul{
         list-style: none;
+
+        li{
+        margin-bottom: 7px;
+        }
     }
 
     a{
@@ -17,5 +22,10 @@ footer {
         text-decoration: none;
         font-size: 16px;
         font-weight: 400;
+
+        i{
+            margin-right: 11px;
+            width: 18px;
+        }
     }
 }

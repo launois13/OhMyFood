@@ -6,10 +6,11 @@
     background: linear-gradient(#FF79DA, #9356DC);
     filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.25));
     cursor: pointer;
-    padding: 15px;
+    padding: 13px 19px;
     border: none;
     opacity: 1;
     transition: all 0.5s; // Ajoute une transition pour tous les effets
+    font-weight: 500;
 
     &:hover {
         // eclaircit le bouton au survol

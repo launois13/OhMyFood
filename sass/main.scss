@@ -10,12 +10,18 @@
 @import "./components/cardContainer";
 @import "./components/hero";
 @import "./components/operation";
+@import "./components/newGreen";
+@import "./components/menuCard";
 
 /* Layouts */
+@import "./layouts/loader";
 @import "./layouts/footer";
 @import "./layouts/header";
 @import "./layouts/location";
+@import "./layouts/resto";
 
+/* Pages */
+@import "./pages/restaurants";
 
 body{
     margin: 0;

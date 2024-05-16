@@ -1,0 +1,19 @@
+.new_green{
+    position: relative;
+        &::before{
+            content: 'Nouveau';
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: 10px;
+            top: 10px;
+            border-radius: 2px;
+            padding: 7px 9px;
+            font-weight: 500;
+            color: #008766;
+            font-size: 14px;
+            background-color: #99e2d0;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+        }
+}

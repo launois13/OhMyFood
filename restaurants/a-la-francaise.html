@@ -8,68 +8,130 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="/assets/images/logo/favicon.ico">
+        <link rel="stylesheet" href="/assets/css/main.css">
 
     <title>ohmyfood</title>
     <meta name="title" content="ohmyfood">
-    <link rel="stylesheet" href="css/sass/style.css">
   </head>
   <body>
 
-    <header>
-      <!--<h1>ohmyfood</h1> remplacer par logo ? pb h1, h2...-->
-      <a href="index.html">
-        <i class="fa-solid fa-arrow-left"></i> <!-- définir la class en "css"-->
-      </a>
+<!--prevoir le loader -au choix- aux couleurs du site-->
+
+    <header class="header">
+      <img src="/assets/images/logo/ohmyfood.svg" alt="OhMyFood">
     </header>
 
-    <main>
+  <main class="main">
+      <img class="main_banner" src="../assets/images/restaurants/a-la-francaise.jpg" alt="viande crue avec crème et légumes feuillus">
+      <section class="main_menu">
+          <h2 class="main_menu_title">À la française<span class="heart"></span></h2>
+          <div class="main_menu_starter">
+              <h3>Entrées</h3>
+              
+                  <div class="meal_description">
+                      <h4>Tartare de poulpe acidulé</h4>
+                      <p>Aux zestes d'orange</p>
+                  </div>
+                  <p class="meal_price">25€</p>
+                  <div class="meal_check"></div>
+              </div>
+              
+                  <div class="meal_description">
+                      <h4>Velouté de légumes d'antan</h4>
+                      <p>Carotte, panais, topinambour</p>
+                  </div>
+                  <p class="meal_price">35€</p>
+                  <div class="meal_check"></div>
+              </div>
+              
+                  <div class="meal_description">
+                      <h4>Soupe à l'oignon</h4>
+                      <p>Revisitée</p>
+                  </div>
+                  <p class="meal_price">20€</p>
+                  <div class="meal_check"></div>
+              </div>
+          </div>
+          <div class="main_menu_dish">
+              <h3>Plats</h3>
+              
+                  <div class="meal_description">
+                      <h4>Coquilles Saint-Jacques</h4>
+                      <p>Accompagnées d'une purée de panais</p>
+                  </div>
+                  <p class="meal_price">40€</p>
+                  <div class="meal_check"></div>
+              </div>
+              
+                  <div class="meal_description">
+                      <h4>Magret de canard</h4>
+                      <p>Et parmentier de pommes de terre</p>
+                  </div>
+                  <p class="meal_price">35€</p>
+                  <div class="meal_check"></div>
+              </div>
+              
+                  <div class="meal_description">
+                      <h4>Pigeonneau d’Ille-et-Vilaine</h4>
+                      <p>Sur son lit de gnocchis aux légumes</p>
+                  </div>
+                  <p class="meal_price">44€</p>
+                  <div class="meal_check"></div>
+              </div>
+          </div>
+          <div class="main_menu_dessert">
+              <h3>Desserts</h3>
+              
+                  <div class="meal_description">
+                      <h4>Pétales de violettes glacés</h4>
+                      <p>Et purée de noisettes</p>
+                  </div>
+                  <p class="meal_price">18€</p>
+                  <div class="meal_check"></div>
+              </div>
+              
+                  <div class="meal_description">
+                      <h4>Fondant au chocolat</h4>
+                      <p>Revisité</p>
+                  </div>
+                  <p class="meal_price">22€</p>
+                  <div class="meal_check"></div>
+              </div>
+              
+                  <div class="meal_description">
+                      <h4>Millefeuille croustillant</h4>
+                      <p>Myrtilles et pâte d’amande</p>
+                  </div>
+                  <p class="meal_price">23€</p>
+                  <div class="meal_check"></div>                         
+              </div>
+          </div>
+          <div class="order_btn">
+            <button class="gradient_button" href="#">Commander</button>
+          </div>
+      </section>
+  </main>
 
-<!--photo du restaurant-->
-
-<section><!--menus-->
-    <div>
-        <!--titre en scss-->
-        <h1>A la française</h1>
-        <!--animation coeur gradient-->
-
-    </div>
-    <div>
-        
-        <h2>ENTREES</h2>
-        <!--prevoir les div de cards en ul li ou flexbox pour responsive-->
-        <!--prévoir coche verte et ...-->
-
-    </div>
-
-
-</section>
+  <footer>
+    <img class="logo" src="/assets/images/logo/ohmyfood.svg" alt="OhMyFood">
+    <ul>
+      <li>
+        <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+      </li>
+      <li>
+        <a href="#">Mentions légales</a>
+      </li>
+      <li>
+        <a href="mailto:contact@ohmyfood.com">Contact</a>
+      </li>
+    </ul>
+  </footer>
 
 
 
-
-    </main>
-
-
-
-
-    <footer>
-        <h2>ohmyfood</h2>
-      <ul class="footer__nav"> <!--a creer-->
-        <li>
-          <a href="#">Proposer un restaurant</a>
-        </li>
-        <li>
-          <a href="#">Devenir partenaire</a>
-        </li>
-        <li>
-          <a href="#">Mentions légales</a>
-        </li>
-        <li>
-          <a href="mailto:contact@ohmyfood.com">Contact</a>
-        </li>
-      </ul>
-
-    </footer>
-  </body>
+</body>
 </html>

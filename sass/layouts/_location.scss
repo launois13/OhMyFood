@@ -3,8 +3,11 @@
     height: 45px;
     display: flex;
     align-items: center;
+    box-shadow: 0 4px 4px #b5b5b5;
+    z-index: 2;
+    position: relative;
 
-    &--marker {
+    &_marker {
         width: fit-content; /* Ajuste la largeur de l'élément à son contenu */
         display: flex; /* Utilise flexbox pour aligner l'icône et le texte horizontalement */
         margin: 0 auto; /* Centre le contenu horizontalement */
