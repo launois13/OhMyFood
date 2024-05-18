@@ -19,94 +19,132 @@
 <!--prevoir le loader -au choix- aux couleurs du site-->
 
     <header class="header">
+        <a class="back" href="/">
+            <i class="fa fa-arrow-left"></i>
+            </a>  
       <img src="/assets/images/logo/ohmyfood.svg" alt="OhMyFood">
     </header>
+
     <main class="main">
-      <img class="main_banner" src="../assets/images/restaurants/le-delice-des-sens.jpg" alt="Dos de cabillaud sur lit de légumes">
-      <section class="main_menu">
-          <h2 class="main_menu_title">Le délice des sens<span class="heart"></span></h2>
-          <div class="main_menu_starter">
-              <h3>Entrées</h3>
-              <div tabindex="0" class="meal">
-                  <div class="meal_description">
-                      <h4>Tartare de thon</h4>
-                      <p>Assaisonné au yuzu</p>
-                  </div>
-                  <p class="meal_price">25€</p>
-                  <div class="meal_check"></div>
+      <img class="resto_banner" src="../assets/images/restaurants/le-delice-des-sens.jpg" alt="Dos de cabillaud sur lit de légumes">
+      <section class="resto_section">
+
+        <div class="menu_header">
+
+            <h2 class="title">Le délice des sens</h2>
+            <div class="heart">
+                <i class="fa-solid fa-heart"></i> <!-- <i class="fa-regular fa-heart"></i> -->
               </div>
-              <div tabindex="0" class="meal">
-                  <div class="meal_description">
-                      <h4>Bouchée de homard croustillant</h4>
-                      <p>Et sa farandole de petits légumes</p>
-                  </div>
-                  <p class="meal_price">35€</p>
-                  <div class="meal_check"></div>
-              </div>
-              <div tabindex="0" class="meal">
-                  <div class="meal_description">
-                      <h4>Velouté de cèpes</h4>
-                      <p>Aux truffes</p>
-                  </div>
-                  <p class="meal_price">20€</p>
-                  <div class="meal_check"></div>
-              </div>
-          </div>
-          <div class="main_menu_dish">
-              <h3>Plats</h3>
-              <div tabindex="0" class="meal">
-                  <div class="meal_description">
-                      <h4>Poulet rôti aux herbes de Provence</h4>
-                      <p>Et sa crème de truffe</p>
-                  </div>
-                  <p class="meal_price">40€</p>
-                  <div class="meal_check"></div>
-              </div>
-              <div tabindex="0" class="meal">
-                  <div class="meal_description">
+        </div>
+              
+        <div class="start">
+                  <h3 class="sub_title">Entrées</h3>
+                  <div class="menu_card">
+                      <div class="description">
+                          <h4>Tartare de thon</h4>
+                          <p>Assaisonné au yuzu </p>
+                        </div>
+                        <div class="price">
+                            <p>25€</p>
+                        </div>
+                        <!-- <div class="check"></div> -->
+                    </div>
+                    <div class="menu_card">
+                        <div class="description">
+                            <h4>Bouchée de homard croustillant</h4>
+                            <p>Et sa farandole de petits légumes</p>
+                        </div>
+                        <div class="price">
+                            <p>35€</p>
+                        </div>
+                        <!-- <div class="check"></div> -->
+                    </div>
+                </div>
+                <div class="menu_card">
+                    <div class="description">
+                        <h4>Velouté de cèpes</h4>
+                        <p>Aux truffes</p>
+                    </div>
+                    <div class="price">
+                        <p>20€</p>
+                    </div>
+                    <!-- <div class="check"></div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="main">
+            <h3 class="sub_title">Plats</h3>
+            <div class="menu_card">
+                <div class="description">
+                    <h4>Poulet rôti aux herbes de Provence</h4>
+                    <p>Et sa crème de truffe</p>
+                </div>
+                <div class="price">
+                    <p>40€</p>
+                </div>
+                <!-- <div class="check"></div> -->
+            </div>
+        </div>
+              <div class="menu_card">
+                  <div class="description">
                       <h4>Langouste rôtie</h4>
                       <p>Et ses légumes de saison</p>
-                  </div>
-                  <p class="meal_price">35€</p>
-                  <div class="meal_check"></div>
-              </div>
-              <div tabindex="0" class="meal">
-                  <div class="meal_description">
-                      <h4>Côte de boeuf Angus</h4>
-                      <p>Et sa purée de panais</p>
-                  </div>
-                  <p class="meal_price">44€</p>
-                  <div class="meal_check"></div>
-              </div>
+                    </div>
+                    <div class="price">
+                        <p>35€</p>
+                    </div>
+                    <!-- <div class="check"></div> -->
+                </div>
+            </div>
+            <div class="menu_card">
+                <div class="description">
+                    <h4>Côte de bœuf Angus</h4>
+                    <p>Et sa purée de panais</p>
+                </div>
+                <div class="price">
+                    <p>44€</p>
+                </div>
+                <!-- <div class="check"></div> -->
+            </div>
+        </div>
           </div>
-          <div class="main_menu_dessert">
-              <h3>Desserts</h3>
-              <div tabindex="0" class="meal">
-                  <div class="meal_description">
-                      <h4>Farandole de desserts</h4>
-                      <p>Du chef</p>
-                  </div>
-                  <p class="meal_price">18€</p>
-                  <div class="meal_check"></div>
-              </div>
-              <div tabindex="0" class="meal">
-                  <div class="meal_description">
-                      <h4>Crème brulée</h4>
-                      <p>Revisitée</p>
-                  </div>
-                  <p class="meal_price">22€</p>
-                  <div class="meal_check"></div>
-              </div>
-              <div tabindex="0" class="meal">
-                  <div class="meal_description">
-                      <h4>Tiramisu</h4>
-                      <p>À la noisette</p>
-                  </div>
-                  <p class="meal_price">23€</p>
-                  <div class="meal_check"></div>                         
-              </div>
+          <div class="dessert">
+              <h3 class="sub_title">Desserts</h3>
+                <div class="menu_card">
+                    <div class="description">
+                        <h4>Farandole de desserts</h4>
+                        <p>Du chef</p>
+                    </div>
+                    <div class="price">
+                        <p>18€</p>
+                    </div>
+                    <!-- <div class="check"></div> -->
+                </div>
+                  <div class="menu_card">
+                      <div class="description">
+                          <h4>Crème brûlée </h4>
+                          <p>Revisitée</p>
+                        </div>
+                        <div class="price">
+                            <p>22€</p>
+                        </div>
+                        <!-- <div class="check"></div> -->
+                    </div>
+                </div>
+                <div class="menu_card">
+                    <div class="description">
+                        <h4>Tiramisu</h4>
+                        <p>À la noisette</p>
+                    </div>
+                    <div class="price">
+                        <p>23€</p>
+                    </div>
+                    <!-- <div class="check"></div> -->                         
+                </div>
+            </div>
+        </div>
           </div>
-          <!--test btn-->
           <div class="order_btn">
             <button class="gradient_button" href="#">Commander</button>
           </div>
