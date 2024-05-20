@@ -62,6 +62,34 @@
     margin: 30px 0 10px 0;
 }
 }
+.start {
+    & > .sub_title {
+      font-weight: 300;
+      font-size: 16px;
+      border-bottom: 3px solid #99e2d0;
+      width: 40px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .main,
+  .dessert {
+    margin-top: 40px;
+
+    & > .sub_title {
+      font-weight: 300;
+      font-size: 16px;
+      border-bottom: 3px solid #99e2d0;
+      width: 40px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .order_btn {
+    text-align: center;
+    margin: 30px 0 10px 0;
+  }
+
 //fa fleche gauche header ; h1 titre en Shrikhand ;  integrer dans des cards entrees / plats  / desserts
 //regler les paddings ; intégrer le gradientButton en changeant le text
 //anticiper au chargement de la page les anim de menus ; les anim de coche verte ; les anim de coeurs gradient
