@@ -1,5 +1,5 @@
 # OhMyFood
-Developper en mobile first, puis tablette et desktop
+Developpé en mobile first, puis tablette et desktop
 Page d'accueil + 4 pages restaurants
 Projet à réaliser en html et css + sass (avec des animations en css)
 images provenant du site unsplash :
