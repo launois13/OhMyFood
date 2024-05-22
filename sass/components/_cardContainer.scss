@@ -67,18 +67,26 @@ $breakpoint-desktop: 768px; // relire le brief pour la valeur souhaitée pour le
   }
 }
 
-// Styles pour le format desktop
-@media (min-width: $breakpoint-desktop) {
+// Tablet
+@media (min-width: 768px) {
   .cards_container {
-    flex-direction: row; // Alignement horizontal pour desktop
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 50px;
+    row-gap: 25px;
   }
+}
 
+// Desktop
+@media (min-width: 1024px) {
+  .cards_container {
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 100px;
+    row-gap: 50px;
+  }
+  
   .card {
-    width: calc(50% - 0.5rem); // Largeur 50% avec un petit espacement
-    margin-right: 1rem; // Espacement entre les cards
-
-    &:nth-child(2n) {
-      margin-right: 0; // Supprime la marge droite pour la dernière card de chaque ligne
-    }
+    width: 500px;
   }
 }

@@ -1,7 +1,34 @@
 .resto_banner{
-    width: 100%;
-    position: relative;
-    z-index: 2;
+  max-height: 275px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+// Tablet
+@media (min-width: 768px) {
+  .resto_banner{
+    max-height: 325px;
+  }
+
+  .resto_section {
+    margin-left:  95px;
+    margin-right:  95px;
+  }
+}
+
+// Desktop
+@media (min-width: 1440px) {
+  .resto_banner{
+    max-height: 400px;
+  }
+
+  .resto_section {
+    margin-left:  192px;
+    margin-right:  192px;
+  }
 }
 
 .resto_section {

@@ -41,4 +41,10 @@
         width: 24px;
         height: 24px;
     }
+
+
+    // Desktop
+    @media (min-width: 1024px) {
+        min-width: 335px;
+    }
 }

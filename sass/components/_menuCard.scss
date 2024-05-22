@@ -2,49 +2,79 @@
   border-radius: 15px;
   height: 69px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 15px;
   background-color: #fff;
   filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.15));
   margin-bottom: 12px;
   text-align: initial;
-  position: relative; /* Ajoute un contexte de positionnement */
+  overflow: hidden;
 
-  .description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
-    margin-right: 10px;
-    text-align: initial;
+  &:hover {
+    .check {
+      margin-right: 0;
 
-    h4 {
-      font-size: 18px;
-      font-weight: 500;
-      margin-bottom: 5px;
-      white-space: nowrap;
-    }
-
-    p {
-      font-size: 15px;
-      font-weight: 300;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      i {
+        transition: 1s;
+        transform: rotate(1turn);
+      }
     }
   }
-
-  .price {
+  
+  .menu_infos{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: initial;
-    position: absolute; /* Positionne le prix de manière absolue */
-    right: 15px; /* Aligne le prix à droite avec une marge de 15px */
-  }
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+
+      .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+        margin-right: 10px;
+        text-align: initial;
+    
+        h4 {
+          font-size: 18px;
+          font-weight: 500;
+          margin-bottom: 5px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+    
+        p {
+          font-size: 15px;
+          font-weight: 300;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    
+      .price {
+        margin-top: auto;
+      }
+    }
+
 
   .check {
-    display: none;
+    background: #99E2D0;
+    width: 59px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-right: -59px;
+    transition: .5s;
+    
+    & i {
+      background-color: #99E2D0;
+      color: #fff;
+      font-size: 25px;
+    }
+
   }
 
   @keyframes slideUpMenu {
@@ -100,3 +130,12 @@
     }
 
   }
+ // Styles pour tablettes
+ @media (min-width: 768px) and (max-width: 1439px) {
+  // Ajoutez ici les styles spécifiques pour les tablettes
+}
+
+// Styles pour desktops
+@media (min-width: 1440px) {
+  // Ajoutez ici les styles spécifiques pour les desktops
+}

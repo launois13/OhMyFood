@@ -21,4 +21,18 @@
             width: 100%;
         }
     }
+
+    // Tablet
+    @media (min-width: 768px) {
+    }
+
+    // Desktop
+    @media (min-width: 1024px) {
+
+        .list {
+            flex-direction: row;
+            margin: 0;
+            max-width: inherit;
+        }
+    }
 }
