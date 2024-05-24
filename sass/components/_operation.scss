@@ -1,6 +1,6 @@
 .operation {
     text-align: center;
-    padding: 48px 20px 68px 20px;
+    padding: 58px 20px 66px 20px;
 
     h2 {
         text-align: left;
@@ -24,15 +24,22 @@
 
     // Tablet
     @media (min-width: 768px) {
-    }
-
-    // Desktop
-    @media (min-width: 1440px) {
+        padding: 58px 70px;
 
         .list {
             flex-direction: row;
             margin: 0;
-            max-width: inherit;
+            max-width: unset;
+        }
+    }
+
+    // Desktop
+    @media (min-width: 1440px) {
+        padding: 58px 180px;
+
+        .list {
+            flex-direction: row;
+            margin: 0;
         }
     }
 }

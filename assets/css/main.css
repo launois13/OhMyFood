@@ -84,9 +84,17 @@ h1 {
   width: 24px;
   height: 24px;
 }
+@media (min-width: 768px) {
+  .grey_button {
+    min-width: 200px;
+    padding: 10px;
+    text-align: left;
+  }
+}
 @media (min-width: 1440px) {
   .grey_button {
     min-width: 335px;
+    padding: 10px 20px;
   }
 }
 
@@ -190,7 +198,7 @@ h1 {
 
 .operation {
   text-align: center;
-  padding: 48px 20px 68px 20px;
+  padding: 58px 20px 66px 20px;
 }
 .operation h2 {
   text-align: left;
@@ -209,11 +217,23 @@ h1 {
 .operation .list button {
   width: 100%;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
+  .operation {
+    padding: 58px 70px;
+  }
   .operation .list {
     flex-direction: row;
     margin: 0;
-    max-width: inherit;
+    max-width: unset;
+  }
+}
+@media (min-width: 1440px) {
+  .operation {
+    padding: 58px 180px;
+  }
+  .operation .list {
+    flex-direction: row;
+    margin: 0;
   }
 }
 
@@ -451,7 +471,7 @@ footer ul li a i {
     white-space: nowrap;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   footer .logo {
     margin-left: 0;
     margin-top: auto;
