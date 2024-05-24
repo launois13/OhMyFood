@@ -32,19 +32,13 @@ footer {
 
     // Tablet
     @media (min-width: 768px) {
-      text-align: center;
-    }
-
-    // Desktop
-    @media (min-width: 1024px) {
       display: flex;
       height: 114px;
+      padding: 15px 15px 30px;
 
       .logo {
-        margin-left: 0;
         height: fit-content;
-        margin-top: auto;
-        margin-right: 60px;
+        margin: auto auto 0;
       }
 
       ul {
@@ -58,15 +52,38 @@ footer {
           
           &:nth-child(1), &:nth-child(2)  {
             font-weight: 500;
-            width: 190px;
+            white-space: nowrap;
+
 
             a i {
               margin-right: 2px;
             }
           }
 
+          &:nth-child(3) {
+            margin-left: 20px;
+          }
+
           &:nth-child(3), &:nth-child(4)  {
             font-weight: 400;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+
+    // Desktop
+    @media (min-width: 1024px) {
+      .logo {        
+        margin-left: 0;
+        margin-top: auto;
+        margin-right: 60px;
+      }
+      ul {
+
+        li{
+
+          &:nth-child(3), &:nth-child(4)  {
             width: 130px;
           }
         }
