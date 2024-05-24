@@ -152,19 +152,21 @@ h1 {
 @media (min-width: 768px) {
   .cards_container {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     -moz-column-gap: 50px;
          column-gap: 50px;
     row-gap: 25px;
   }
+  .cards_container a {
+    width: 40%;
+  }
 }
 @media (min-width: 1440px) {
   .cards_container {
-    flex-direction: row;
-    justify-content: space-around;
+    max-width: 1250px;
+    margin: 0 auto;
     -moz-column-gap: 100px;
          column-gap: 100px;
-    row-gap: 50px;
   }
   .card {
     width: 500px;

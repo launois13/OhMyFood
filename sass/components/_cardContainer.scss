@@ -71,19 +71,22 @@ $breakpoint-desktop: 768px; // relire le brief pour la valeur souhaitée pour le
 @media (min-width: 768px) {
   .cards_container {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     column-gap: 50px;
     row-gap: 25px;
+
+    a {
+      width: 40%;
+    }
   }
 }
 
 // Desktop
 @media (min-width: 1440px) {
   .cards_container {
-    flex-direction: row;
-    justify-content: space-around;
+    max-width: 1250px;
+    margin: 0 auto;
     column-gap: 100px;
-    row-gap: 50px;
   }
   
   .card {
