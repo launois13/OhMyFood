@@ -167,7 +167,7 @@ h1 {
     row-gap: 25px;
   }
   .cards_container a {
-    width: 40%;
+    width: 45%;
   }
 }
 @media (min-width: 1440px) {
